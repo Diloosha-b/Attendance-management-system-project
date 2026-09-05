@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Attendance Register</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <p class="brand">Attendance Register</p>
+  <button class="logout-btn" onclick="logout()">Logout</button>
+</div>
+
+<div class="dashboard">
+
+  <div class="stat-row">
+    <div class="stat-card">
+      <div class="stat-label">Total Students</div>
+      <div class="stat-value" id="statTotal">0</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Class Average</div>
+      <div class="stat-value" id="statAverage">—</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Sessions Marked</div>
+      <div class="stat-value" id="statSessions">0</div>
+    </div>
+  </div>
+
+  <div class="add-row">
+    <input type="text" id="studentName" placeholder="Enter student name">
+    <button class="btn-add" onclick="addStudent()">Add Student</button>
+  </div>
+
+  <div class="ledger">
+    <table>
+      <thead>
+        <tr>
+          <th>Student Name</th>
+          <th>Mark Attendance</th>
+          <th class="pct-cell">Percentage</th>
+        </tr>
+      </thead>
+      <tbody id="studentList"></tbody>
+    </table>
+  </div>
+
+  <p class="footnote">Data is stored locally in this browser.</p>
+
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

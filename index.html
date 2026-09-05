@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Teacher Login — Attendance Register</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="login-shell">
+  <div class="login-container">
+
+    <div class="login-panel">
+      <p class="brand">Attendance<br>Register</p>
+      <div class="chalk-underline"></div>
+      <p>Keep every roll call in one place — add students, mark each session, and watch the percentages update as you go.</p>
+    </div>
+
+    <div class="login-form">
+      <h1>Teacher Login</h1>
+      <p class="sub">Sign in to open today's register.</p>
+
+      <div class="field">
+        <label for="username">Username</label>
+        <input type="text" id="username" placeholder="Enter username" autocomplete="username">
+      </div>
+
+      <div class="field">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter password" autocomplete="current-password">
+      </div>
+
+      <button class="btn-primary" onclick="login()">Sign In</button>
+
+      <p id="error"></p>
+
+      <p class="hint">Demo credentials — username: <strong>admin</strong>, password: <strong>1234</strong></p>
+    </div>
+
+  </div>
+</div>
+
+<script src="login.js"></script>
+
+</body>
+</html>
